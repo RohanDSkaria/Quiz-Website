@@ -1,0 +1,117 @@
+/* home page */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: white;
+}
+.container {
+    text-align: center;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5em 3em;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* quiz page */
+
+#progress-bar {
+    width: 500px;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+#progress-bar-inner {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+#progress-text {
+    font-weight: bold;
+}
+#score-display {
+    position: absolute;
+    top: 145px;
+    right: 450px;
+    font-size: 50px;
+}
+#score-change {
+    position: absolute;
+    top: 145px;
+    right: 385px;
+    font-size: 50px;
+    font-weight: bold;
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+}
+.quiz-container {
+    font-size: 32px;
+    max-width: 9000px;
+    padding: 20px;
+}
+.option {
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.option-letter {
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.option:hover .option-text {
+    color: #FFD700;
+}
+.option:hover {
+    transform: translateY(-8px);
+}
+.option.correct .option-text {
+    color: rgb(2, 255, 2);
+}
+.option.incorrect .option-text {
+    color: red;
+}
+.feedback {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+/* end page */
+
+.end-container {
+    text-align: center;
+}
+.end-text {
+    font-size: 75px;
+    margin-bottom: 120px;
+}
+.end-score {
+    font-size: 55px;
+    margin-bottom: 100px;
+}
+.button-container {
+    margin-bottom: 100px;
+}
